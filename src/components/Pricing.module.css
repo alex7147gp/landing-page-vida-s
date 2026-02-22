@@ -1,0 +1,160 @@
+.section {
+    background: var(--surface);
+    padding: 96px 0;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 56px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border);
+}
+
+.left h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.7rem;
+    color: var(--dark);
+    margin-bottom: 28px;
+}
+
+.list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+}
+
+.check {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.total {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.total s {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.card {
+    background: var(--dark);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 40px 36px;
+    text-align: center;
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.price {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.price span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sub {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+}
+
+.secure {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.methods {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.methods span {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width:900px) {
+    .box {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .box {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width:600px) {
+    .section {
+        padding: 56px 0;
+    }
+
+    .left h2 {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        padding: 24px 20px;
+    }
+
+    .price {
+        font-size: 3rem;
+    }
+}

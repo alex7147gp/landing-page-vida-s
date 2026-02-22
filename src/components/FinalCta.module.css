@@ -1,0 +1,114 @@
+.section {
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 50%, #c0392b 100%);
+    padding: 96px 0;
+}
+
+.inner {
+    text-align: center;
+}
+
+.logo {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.eyebrow {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.inner h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.price {
+    margin-bottom: 32px;
+}
+
+.oldPrice {
+    display: block;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: line-through;
+    margin-bottom: 8px;
+}
+
+.newPrice {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.newPrice span {
+    font-size: 2rem;
+}
+
+.newPrice small {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.cta {
+    display: inline-flex;
+}
+
+.row {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+@media (max-width:768px) {
+    .row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .inner h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:600px) {
+    .section {
+        padding: 56px 0;
+    }
+
+    .inner h2 {
+        font-size: 1.6rem;
+    }
+
+    .newPrice {
+        font-size: 3rem;
+    }
+
+    .newPrice span {
+        font-size: 1.5rem;
+    }
+}

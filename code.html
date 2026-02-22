@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Índice Glucémico y Diabetes - Tu Guía Completa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10B981", // Emerald 500
+                        secondary: "#F59E0B", // Amber 500 for CTAs
+                        darkgreen: "#064E3B",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#111827",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1F2937",
+                        "text-light": "#1F2937",
+                        "text-dark": "#F3F4F6",
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Open Sans", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'glow': '0 0 15px rgba(245, 158, 11, 0.5)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>html { scroll-behavior: smooth; }@keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes pulse-custom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .btn-pulse {
+            animation: pulse-custom 2s infinite;
+        }.text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #10B981, #34D399);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300">
+<div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-surface-dark shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 py-3 px-4 border-t border-gray-200 dark:border-gray-700 md:hidden flex justify-between items-center">
+<div>
+<span class="text-xs text-gray-500 dark:text-gray-400 block line-through">$90.00</span>
+<span class="text-xl font-bold text-primary">$15 USD</span>
+</div>
+<a class="bg-secondary hover:bg-yellow-500 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-all text-sm uppercase" href="#offer">
+            Comprar Ahora
+        </a>
+</div>
+<div class="bg-darkgreen text-white text-center py-2 text-sm font-medium">
+<span class="material-icons-round text-sm align-middle mr-1">local_offer</span>
+        ¡Oferta por tiempo limitado! Ahorra 80% hoy.
+    </div>
+<header class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-50 to-white dark:from-gray-900 dark:to-gray-800 -z-10"></div>
+<div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-primary opacity-10 blur-3xl rounded-full"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+<div class="mb-12 lg:mb-0">
+<span class="inline-block py-1 px-3 rounded-full bg-green-100 dark:bg-green-900/30 text-primary font-bold text-xs uppercase tracking-wider mb-4 border border-primary/20">
+                        Nueva Edición 2024
+                    </span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight mb-6 leading-tight">
+                        ¿Sabías que el <span class="text-gradient">índice glucémico</span> puede cambiar tu vida?
+                    </h1>
+<p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        Descubre cómo controlar tu azúcar en sangre y prevenir la diabetes tipo 2 con la alimentación correcta, sin dietas restrictivas ni hambre.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-8">
+<a class="btn-pulse bg-secondary hover:bg-yellow-500 text-white font-bold py-4 px-8 rounded-lg shadow-glow transition-all text-center flex items-center justify-center gap-2 text-lg" href="#offer">
+<span>¡CONSIGUE TU EBOOK AHORA!</span>
+<span class="material-icons-round">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2 justify-center sm:justify-start text-sm text-gray-500 dark:text-gray-400">
+<div class="flex -space-x-2">
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cw6XlGO3-5YmtAJzoCpSi2GjbIbV7Iy2usT29v-LZPxvi2cMXuQfNG_SfNjLJ1LWMthCrfn-c621Upx80WZyciYzCLoa7P1IhDC_0fwyFwgFrOj6vrgX1zvM57F0RytNb42DD2-kKXZ1E2IvFa5SLIucaBdf8HXrlGoU4k_VYv-3zdZlJAsBsEkPCeJn5Opi-2byJbh3LjM6_11ieR5ERn4Oj62SwdEmT8m_xkldyULZNSgf1LzWcX9Fs7QVct1cyEMIy5A6apAC"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuZjLN9snepa7Nmn_70EduYMD2hyhtoOivu1QO1X8C5WOGhDYMCKijpiEpuGz2lbmgCG8DyH_9utUWO0ElBAow339xJw4YKwgiI1xZhnhdb5Cz17jBe3LNPNQwM0XfJD_xHgR6YRmZVAp8CIRgQwQU_yzopEwBL1-55NuCZS6n9VNfot-CfOH8kGtV6E8RAhB8vAPFzE0gWUx041tb5l-6f2UXXt9RDcoaoNHEpfgba2gt0CJHShIiqoe86J1UE7nEZHZwGrn5gpKY"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOfHPo9P7uY2a393dLyyw-pMQ4xOzH7-I9sZo-wCC2sdseHncH_cOPQr1WXwp5Rl2Puxv4MbspSSdbPyicdzMJcV4DaDQF2p46fb7KTHM7RCrqACgvtb8urJHdxd5qVWsUj32yxReFR6gcJdurlOOsFLLpqi9QpQt3FcEX94a301AmWgrgm8BR4oA1MBJP-yrvjq_K6NCtojCijtbuLOSndnbWpWIApDESfy-muAXR6xtGk9DP6KFMfll2TXVnXF2ohW2BRC8Nxj-M"/>
+</div>
+<span>+5,000 lectores felices</span>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+<p class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3 font-semibold">Avalado por expertos en:</p>
+<div class="flex flex-wrap gap-6 items-center opacity-60 grayscale hover:grayscale-0 transition-all">
+<div class="flex items-center gap-1 font-bold text-gray-600 dark:text-gray-300">
+<span class="material-icons-round text-primary">health_and_safety</span> MedLife
+                            </div>
+<div class="flex items-center gap-1 font-bold text-gray-600 dark:text-gray-300">
+<span class="material-icons-round text-primary">nutrition</span> NutriScience
+                            </div>
+<div class="flex items-center gap-1 font-bold text-gray-600 dark:text-gray-300">
+<span class="material-icons-round text-primary">local_hospital</span> DiabCare
+                            </div>
+</div>
+</div>
+</div>
+<div class="relative mx-auto lg:ml-auto w-full max-w-md animate-float">
+<div class="relative z-10 bg-white dark:bg-surface-dark rounded-xl shadow-2xl p-2 transform rotate-2 hover:rotate-0 transition-transform duration-500 border border-gray-100 dark:border-gray-700">
+<div class="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden relative aspect-[3/4]">
+<img alt="Libro de Índice Glucémico y Diabetes" class="object-cover w-full h-full opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHwq9ABry3CNd4F9_T0UL3GcIWKzUM1hhikRCxeLVc5RxFKw1YFLb0JbF2bEUfADIBdXHAx35Fxc-JXsORe6ADLXJtnjS2tilBhEAco1NcPnSCsNKHlVaeOq1rgY0L34KNCISMlH7WPxhdOJSjnWZNVVNHZTlx-5llgLJCfrTSWHXsMI5wiC6d_62Mel5idNO_5DjNaGpe-GxAi5XOtTEkMgXN9whM-p0aW00Ne8KQs053-PCSSSgjCyjJi6y3ZfT526LgujmjvF7M"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 text-white text-center p-6">
+<h3 class="text-3xl font-display font-bold uppercase mb-2">Índice Glucémico</h3>
+<div class="w-16 h-1 bg-secondary mb-2"></div>
+<h3 class="text-3xl font-display font-bold uppercase mb-4">y Diabetes</h3>
+<p class="text-sm">La clave para controlar tu azúcar con la alimentación</p>
+</div>
+<div class="absolute top-4 right-4 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-md z-20">
+                               #1 BEST SELLER
+                           </div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary opacity-20 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary opacity-20 rounded-full blur-2xl"></div>
+</div>
+</div>
+</div>
+</header>
+<section class="py-16 bg-white dark:bg-surface-dark">
+<div class="max-w-4xl mx-auto px-4 text-center mb-12">
+<h2 class="text-2xl md:text-3xl font-display font-bold mb-4 text-gray-900 dark:text-white">La realidad que nadie te cuenta sobre la diabetes</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded"></div>
+</div>
+<div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background-light dark:bg-gray-800 p-6 rounded-2xl shadow-soft text-center hover:translate-y-1 transition-transform border border-transparent hover:border-primary/20">
+<div class="w-14 h-14 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-red-600 dark:text-red-400">
+<span class="material-icons-round text-3xl">warning</span>
+</div>
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-1">1 de cada 10</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Adultos tiene diabetes y muchos no lo saben.</p>
+</div>
+<div class="bg-background-light dark:bg-gray-800 p-6 rounded-2xl shadow-soft text-center hover:translate-y-1 transition-transform border border-transparent hover:border-primary/20">
+<div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 dark:text-blue-400">
+<span class="material-icons-round text-3xl">trending_up</span>
+</div>
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-1">374 Millones</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">De personas tienen prediabetes en el mundo.</p>
+</div>
+<div class="bg-background-light dark:bg-gray-800 p-6 rounded-2xl shadow-soft text-center hover:translate-y-1 transition-transform border border-transparent hover:border-primary/20">
+<div class="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600 dark:text-green-400">
+<span class="material-icons-round text-3xl">verified_user</span>
+</div>
+<h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-1">70% Prevenible</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Con los conocimientos y hábitos correctos.</p>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-6xl mx-auto px-4">
+<div class="bg-white dark:bg-surface-dark rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row items-center border border-gray-200 dark:border-gray-700">
+<div class="w-full md:w-1/2 p-10 flex justify-center bg-gray-50 dark:bg-gray-800">
+<img alt="Book Open" class="rounded-lg shadow-lg max-w-xs md:max-w-sm rotate-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD620eluzEerKZvjKUI6_mnDis3VJxFm9IMYWI4_F5ReC7SVRN0MEGoQGvCp3NzVC7zS3j-ahS7eA-tMmNR0ScSmvGod7Gtst2inlyO5BmXR-W-9xqWFw2kKWrnhLZmK_gzrjIzFWqeO5981FTJigkknEgFwx-NJe1dW6Wp5ZPfq8hIBou9doRgMk0qZqKdD8s00v4UDL74lXSPZQ5FYgfC6TN_kgb5K-4h6tDXBd4TZ1aAqkvbD8n0YLJoZCZfMHOd_KSD9GEpcKLg"/>
+</div>
+<div class="w-full md:w-1/2 p-10 md:p-14">
+<h3 class="text-2xl font-display font-bold text-gray-900 dark:text-white mb-4">
+                        "Índice Glucémico y Diabetes: La Clave para Controlar tu Azúcar"
+                    </h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Una guía completa y accesible que te enseña cómo tomar el control de tu salud a través de lo que comes. Basado en investigaciones recientes y consejos prácticos para hacer cambios inteligentes en tu dieta diaria.
+                    </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3">
+<span class="material-icons-round text-primary mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Lista completa de alimentos bajos en IG.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-icons-round text-primary mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Plan de comidas de 4 semanas.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-icons-round text-primary mt-1">check_circle</span>
+<span class="text-gray-700 dark:text-gray-300">Recetas deliciosas y fáciles de preparar.</span>
+</li>
+</ul>
+<a class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-green-600 transition-colors shadow-lg shadow-green-500/30" href="#offer">
+                        Obtener Ahora por $15
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white dark:bg-surface-dark relative">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-16">
+<span class="text-secondary font-bold tracking-wider uppercase text-sm">Contenido Exclusivo</span>
+<h2 class="text-3xl md:text-4xl font-display font-bold mt-2 mb-4 text-gray-900 dark:text-white">En este libro descubrirás:</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<div class="flex gap-4">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 dark:bg-green-900/30 text-primary">
+<span class="material-icons-round">menu_book</span>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Qué es el índice glucémico</h4>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Entiende por qué es esencial para personas con diabetes o prediabetes de forma sencilla.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 dark:bg-green-900/30 text-primary">
+<span class="material-icons-round">restaurant_menu</span>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Cómo construir una dieta</h4>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Aprende a crear menús de bajo índice glucémico sin complicaciones ni estrés.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 dark:bg-green-900/30 text-primary">
+<span class="material-icons-round">thumb_up</span>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Alimentos recomendados</h4>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Y los que debes evitar para mantener estable tu azúcar en sangre de por vida.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 dark:bg-green-900/30 text-primary">
+<span class="material-icons-round">shield</span>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Estrategias para prevenir</h4>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Previene la diabetes tipo 2 con alimentación y estilo de vida saludable.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-fuchsia-900 text-white overflow-hidden relative">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-4 backdrop-blur-sm border border-white/20">
+<span class="material-icons-round text-yellow-400 mr-2">card_giftcard</span>
+<span class="font-bold text-sm uppercase tracking-wide">Regalo Exclusivo</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-display font-extrabold mb-4">¡Bonos Especiales GRATIS!</h2>
+<p class="text-lg text-purple-200">Al comprar hoy, recibes estos 5 bonos adicionales completamente GRATIS</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
+<div class="bg-indigo-600 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="font-bold text-xl">#1</span>
+</div>
+<img alt="Detox Juice" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD79J_4u4n4GkXgqFrICK1ANoxmjA74G7HF3ftoFyxkyDa1BJ3-9Fo9NnsoTqeuem4GJ-KRlBjuu-8g2piVcgYpNNozGBTxiqSFfXks0yNc7IhgX5JNWUX7QKo1NfY6QqpgtgqU087c4FIk5qJgqJChCnDpk7wLThwQ92biWkjsAMKCo8QNTGPZm27vj_txtMLxSCk_1NNjsE2aLNOgT9RRlHTq9M3yvBqskuJHzlNCU0vwO3ZyJ_hhcRMd6rb_Yq8Kiumd7IthLsF4"/>
+<h3 class="font-bold text-lg mb-2">Reto de 7 Días "Desintoxica tu Azúcar"</h3>
+<p class="text-sm text-gray-300 mb-4">Plan paso a paso para eliminar el azúcar de tu dieta en una semana.</p>
+<div class="flex justify-between items-center text-sm border-t border-white/10 pt-3">
+<span class="text-gray-400 line-through">Valor: $12</span>
+<span class="font-bold text-secondary">¡GRATIS!</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
+<div class="bg-indigo-600 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="font-bold text-xl">#2</span>
+</div>
+<img alt="Healthy Recipes" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcq3Z-EmgM9HJ0QrIexqVJj47GrVCPKKlMDYm0q-Z1dveE34RWaxQmmiOw5gF_zX5rePko8L-8LqGVL7ywAp_rAOoQW7NA1Mkw1An0O8POhFUEn19wJVHVXa9UM5dUL_df8Aupx57OiyUsSutxyFYrez0fcpPegcVsxFviGXKagloyGclrNhVb4nWBDcWdljmWy4R4Rtya7t5HzGUwSOzxlJaHAE0Y4c7HW99g2ERZ6_-x1HrQ3Bd_Tcy8DL3fyzE5xyoFkWIHp-e"/>
+<h3 class="font-bold text-lg mb-2">30 Recetas Rápidas de Bajo IG</h3>
+<p class="text-sm text-gray-300 mb-4">Recetas deliciosas y fáciles de preparar en menos de 30 minutos.</p>
+<div class="flex justify-between items-center text-sm border-t border-white/10 pt-3">
+<span class="text-gray-400 line-through">Valor: $18</span>
+<span class="font-bold text-secondary">¡GRATIS!</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
+<div class="bg-indigo-600 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="font-bold text-xl">#3</span>
+</div>
+<img alt="Habits" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0keHwp4MwpVT_Zdo4ZobY7YnB4zPB5Ob2kvT5RjuLPOfNniDkkcryGkeVF4mPpvS2rduSs6XcDVF96SffFFyKWhtqNhSWShyn24nIhrfNJ8VOozrIR2evm77nGiHdaVdgXOe8jrIOO1torPTR-WLX2gW67xtsL4QYayq9UhGwtSjnfi31xCKLfAQ74_K9WBBmkeQv5oK8MNl5utlcUJTvT504ivbxQxHLI7zZMt3g26bthQjzQ9IMcIQrfw-bzdRhANwQOS8U7QzO"/>
+<h3 class="font-bold text-lg mb-2">Guía Práctica: 7 Hábitos Diarios</h3>
+<p class="text-sm text-gray-300 mb-4">Rutinas simples para mantener estables tus niveles de glucosa.</p>
+<div class="flex justify-between items-center text-sm border-t border-white/10 pt-3">
+<span class="text-gray-400 line-through">Valor: $15</span>
+<span class="font-bold text-secondary">¡GRATIS!</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
+<div class="bg-indigo-600 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="font-bold text-xl">#4</span>
+</div>
+<img alt="Food Table" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH_e6LiiVTMEEcM9mGuuK6QDMQ-ObSXP17K8jJ-8jEZOwDfFLEhcwLJNYBQ7ZsGzbpolWBEK8grLT3gG7W0I4NS5UyMKQuhg_lpgU-y3qxMZbJn8y4nxui90maGZgeNkZRSIftWl1xcGKRbqfX-q16z8_Jc9pHzGxJ4kmhlWhsFusNoeTgVg-bTq63BF8_F4iGWx19BJla3AFmnw6lVdsCSLA4yrh41v7ibT0cSUJAO9rFuZl-weyvTy5CpM2AYl2gROIikSUdKu4K"/>
+<h3 class="font-bold text-lg mb-2">Tabla Completa de Alimentos</h3>
+<p class="text-sm text-gray-300 mb-4">Referencia completa de más de 200 alimentos para tomar decisiones inteligentes.</p>
+<div class="flex justify-between items-center text-sm border-t border-white/10 pt-3">
+<span class="text-gray-400 line-through">Valor: $20</span>
+<span class="font-bold text-secondary">¡GRATIS!</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
+<div class="bg-indigo-600 rounded-lg p-3 w-12 h-12 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="font-bold text-xl">#5</span>
+</div>
+<img alt="Shopping List" class="w-full h-32 object-cover rounded-lg mb-4 opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXhg46AnkcEqi95WoTBNTA-d10JYqw7cw7zjcSchR5-3mMAg7ZeyspGYhLNRt5dBhufPXYmsXVf45Bh8pgtB8zChqT-PVg_FuIkkehVeRfnhS-hhF2exF2azIos641g_bKQx9_ZB95O3SR2fzcbEC7QZdzBogP63OGVCJw2QnwcRzlxB5tKSqWuB90G8bCpwkVA496Uy7z8WieQZ8KtQM43WIC4vv4I9321VMeRFx0KVfZG00PaWhQU3OMFLLqwx1LTJHdObojCbpY"/>
+<h3 class="font-bold text-lg mb-2">Lista de Compras Semanal</h3>
+<p class="text-sm text-gray-300 mb-4">Planificación semanal completa con listas organizadas para el super.</p>
+<div class="flex justify-between items-center text-sm border-t border-white/10 pt-3">
+<span class="text-gray-400 line-through">Valor: $10</span>
+<span class="font-bold text-secondary">¡GRATIS!</span>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-6 md:p-8 text-center max-w-3xl mx-auto shadow-2xl transform hover:scale-105 transition-transform duration-300">
+<div class="text-yellow-900 font-bold uppercase tracking-wider mb-2 text-sm md:text-base">Valor Total del Paquete: <span class="line-through">$90</span></div>
+<div class="text-3xl md:text-5xl font-extrabold text-black mb-4">TU PRECIO HOY: <span class="text-white drop-shadow-md">$15 USD</span></div>
+<p class="text-black/70 mb-6 font-medium">¡Ahorras $75 comprando hoy!</p>
+<a class="inline-block bg-black text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition-colors shadow-lg" href="#offer">
+                    ¡OBTENER TODO POR $15!
+                </a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-5xl mx-auto px-4">
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="w-full md:w-1/3">
+<div class="relative group">
+<img alt="Andrés Diabetes Control" class="rounded-xl shadow-xl w-full object-cover aspect-[3/4] group-hover:scale-[1.02] transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0PTg6HWfKYOZDY_mQMwYR8H78py9PcrzVxHu9zIznnM8-owbWtovYN_W7auc7ziuqkmOJPsLBy-kvF-HBAuquJi1i5zqEvCZC0FI6M28fllJHzQjowiV__bYj43xeiZKLKcy407EVqtEnxdM6hHRlWkqF73ftwcHWFTSbK6bUkac93B2v74_RPOjyRug6szfOZeruocC125mGxGZcDR0STKKwhCotEvX-GpyYk6wxcokAbHS9e29DWz7Z0fQ3PPBGyGCFg0iEiVfE"/>
+<div class="absolute bottom-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+<p class="font-bold text-gray-900 dark:text-white text-sm">Andrés Pérez</p>
+<p class="text-xs text-primary font-semibold">Experto en Nutrición</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<h2 class="text-3xl font-display font-bold mb-4 text-gray-900 dark:text-white">Sobre el Autor</h2>
+<h3 class="text-xl font-semibold text-primary mb-4">Especialista en Endocrinología y Nutrición</h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Con más de 15 años de experiencia ayudando a pacientes a controlar y prevenir la diabetes a través de la alimentación. Graduado de la Universidad de Medicina con especialización en Endocrinología, ha dedicado su carrera a investigar la relación entre el índice glucémico de los alimentos y el control de la diabetes.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-blue-500">verified</span>
+<span class="text-sm text-gray-700 dark:text-gray-200">15+ años de experiencia clínica</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-blue-500">verified</span>
+<span class="text-sm text-gray-700 dark:text-gray-200">Especialista en Endocrinología</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-blue-500">verified</span>
+<span class="text-sm text-gray-700 dark:text-gray-200">Más de 5,000 pacientes atendidos</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-blue-500">verified</span>
+<span class="text-sm text-gray-700 dark:text-gray-200">Autor de múltiples publicaciones</span>
+</div>
+</div>
+<blockquote class="border-l-4 border-secondary pl-4 italic text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 py-3 pr-2 rounded-r-lg">
+                        "Mi misión es hacer que la información médica compleja sea accesible para todos. Creo firmemente que la educación en nutrición es la herramienta más poderosa para prevenir y controlar la diabetes."
+                    </blockquote>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white dark:bg-surface-dark">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="text-3xl font-display font-bold text-center mb-12 text-gray-900 dark:text-white">Lo que dicen nuestros lectores</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Maria" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbX9X65-XNjptUZQL4_npL3tcLcFt7qXKLt7UwrGYmVggYjwI0hSW38V-49rvMtZ2q6Xj0wvI2cFPmGWl4795CDQ5JVhWZGO9u8kjoGxYbbVqp5GpB8NtYkZan87znwR99VKvasgdwjgAlfo7oztdxNz0BKiDcyzypSnWI17oLCyG2zn6kpYcRH6Qc4GW6q5i0kd2tugIrZywmoRxM7ZbxJo4MyqhP0dWslfs7R32wpBIykwrUNE5BZpsqO2cgQxc8hoaqvgf7AZ91"/>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">María González</h4>
+<div class="flex text-yellow-400 text-sm">
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+</div>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Después de leer este libro, logré reducir mi azúcar en sangre en 3 meses. Los consejos son muy prácticos y fáciles de seguir."</p>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Carlos" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIZj3WAUaMbhk-M7XX6CwEEQlId2CgsFtTfxWtDmFpUKXgq-Rs8kEfo40XZJV3Up_B6d8OdNPT4AX5gqKrqN1-Un4XxjEGaTuKGVhuvTPzuHkKZ_lvtYLNxgVtHHUfOY5VSmKOvwL-auA8HahDrE7w6X5R6SqrGgvS5QGGC_Sx0Boy7WNcFaflZHKhiinCM2ggmz92nWzb-alVxFGgqf2PfMxMydjJ5zlmBAaf1ABILiD2WTog5wmMenBiSu0hRHpty8ANU-yioOy4"/>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Carlos Ruiz</h4>
+<div class="flex text-yellow-400 text-sm">
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+</div>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Mi doctor me dijo que tenía prediabetes. Este libro me ayudó a cambiar mi alimentación y ahora mis análisis están normales."</p>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Ana" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0fbwBnN5gzXEo_MtE8G6EUXP_uGjgFdzV89vMsbbHBkRqOZPSGqHQcFrIAWI0K4nviqLxr8qZk0eZ23fFezZC4mjpHTvSCQbsLd5J7Zq6tXsxFVVkhXk9XRjiWATkbSX0WaJD9aKeC4K3IzEV2BbppRvWgDTif9cBjCRpQvFanxeMGc_599bZW9TWEmsdAFvLIAr9uQ207E3villfiyh8RLj_wL6wAkerHejaUkAVwhqw_mZbbbEIDi_nEi3Ht0tTpxsI3Zlh710h"/>
+<div>
+<h4 class="font-bold text-gray-900 dark:text-white">Ana Mendoza</h4>
+<div class="flex text-yellow-400 text-sm">
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+<span class="material-icons-round text-sm">star</span>
+</div>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm italic">"Información muy valiosa y bien explicada. Ahora entiendo cómo los alimentos afectan mi glucosa. ¡Recomendado!"</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-red-700 dark:bg-red-900 text-white relative overflow-hidden" id="offer">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+<div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+<div class="inline-flex items-center gap-2 bg-red-800/50 rounded-full px-4 py-1 mb-6 border border-red-500">
+<span class="material-icons-round text-yellow-300 animate-pulse">timer</span>
+<span class="text-sm font-semibold uppercase">La oferta expira pronto</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-display font-extrabold mb-6 leading-tight">No esperes más para tomar el control de tu salud</h2>
+<p class="text-lg md:text-xl text-red-100 mb-8 max-w-2xl mx-auto">Cada día que pases sin esta información es un día perdido en tu camino hacia una vida más sana.</p>
+<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 max-w-lg mx-auto mb-8 shadow-2xl">
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="material-icons-round text-red-300">verified</span>
+<span class="font-bold uppercase tracking-wide text-sm">Precio especial por tiempo limitado</span>
+</div>
+<div class="flex items-end justify-center gap-3 mb-6">
+<span class="text-xl text-red-300 line-through mb-2">$49</span>
+<span class="text-6xl font-extrabold text-yellow-400 drop-shadow-md">$15</span>
+<span class="text-xl font-bold mb-2">USD</span>
+</div>
+<button class="w-full bg-secondary hover:bg-yellow-500 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform transition-all hover:scale-105 active:scale-95 text-xl uppercase tracking-wider mb-4 btn-pulse">
+                    ¡Comprar Ahora!
+                </button>
+<div class="flex justify-center gap-4 opacity-70 grayscale">
+<span class="material-icons-round">credit_card</span>
+<span class="material-icons-round">lock</span>
+<span class="text-xs self-center">Pagos 100% Seguros</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-background-light dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+<div class="max-w-3xl mx-auto px-4 text-center">
+<div class="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons-round text-blue-600 dark:text-blue-400 text-5xl">shield</span>
+</div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Garantía de satisfacción de 30 días</h2>
+<p class="text-gray-600 dark:text-gray-300 mb-8">Si no estás completamente satisfecho con la información del ebook, te devolvemos el 100% de tu dinero sin preguntas. Tu salud es nuestra prioridad.</p>
+<button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded shadow transition-colors text-sm">
+                LEER POLÍTICA DE REEMBOLSO
+            </button>
+</div>
+</section>
+<footer class="bg-darkgreen text-white py-16">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-4">Tu nueva vida saludable comienza hoy</h2>
+<p class="text-green-200 mb-10 max-w-2xl mx-auto">Ya sea que estés buscando prevenir la diabetes, mejorar tu nutrición, o simplemente entender mejor cómo funciona tu cuerpo, este libro será tu aliado.</p>
+<div class="bg-white/10 rounded-xl p-8 mb-10 backdrop-blur-sm border border-white/10 text-left max-w-md mx-auto">
+<h4 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-icons-round text-secondary">inventory_2</span> Paquete Completo:
+                </h4>
+<ul class="space-y-2 text-sm text-green-100">
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> Libro Principal: Índice Glucémico y Diabetes</li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> BONO: Reto de 7 Días "Desintoxica tu Azúcar"</li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> BONO: 30 Recetas Rápidas</li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> BONO: 7 Hábitos Diarios</li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> BONO: Tabla de +200 Alimentos</li>
+<li class="flex items-start gap-2"><span class="material-icons-round text-secondary text-base">check</span> BONO: Lista de Compras Semanal</li>
+</ul>
+</div>
+<a class="inline-block bg-secondary hover:bg-yellow-500 text-white font-bold py-3 px-10 rounded-lg shadow-glow transition-all mb-12" href="#offer">
+                SÍ, QUIERO TRANSFORMAR MI SALUD
+            </a>
+<div class="border-t border-green-800 pt-8 text-xs text-green-300 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2">
+<div class="bg-white text-darkgreen font-bold px-2 py-1 rounded text-xs">Readdy</div>
+</div>
+<div>© 2024 Índice Glucémico y Diabetes. Todos los derechos reservados.</div>
+<div class="flex gap-4">
+<a class="hover:text-white transition-colors" href="#">Política de Privacidad</a>
+<a class="hover:text-white transition-colors" href="#">Términos y Condiciones</a>
+<a class="hover:text-white transition-colors" href="#">Contacto</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
