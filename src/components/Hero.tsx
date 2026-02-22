@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TrackedButton from "./TrackedButton";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -20,9 +21,9 @@ export default function Hero() {
                         inteligente.
                     </p>
                     <div className={styles.ctaGroup}>
-                        <a href="https://payhip.com/b/s86Pi" className={`btn btn-primary btn-large pulse-btn ${styles.cta}`}>
+                        <TrackedButton href="https://payhip.com/b/s86Pi" className={`btn btn-primary btn-large pulse-btn ${styles.cta}`}>
                             ¡QUIERO MI LIBRO AHORA! →
-                        </a>
+                        </TrackedButton>
                         <p className={styles.ctaNote}>
                             🔒 Acceso inmediato · Garantía 30 días · Solo $15 USD
                         </p>

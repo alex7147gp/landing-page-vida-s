@@ -1,3 +1,4 @@
+import TrackedButton from "./TrackedButton";
 import styles from "./FinalCta.module.css";
 
 export default function FinalCta() {
@@ -13,7 +14,7 @@ export default function FinalCta() {
                         <span className={styles.oldPrice}>Valor: $143 USD</span>
                         <div className={styles.newPrice}>$15<span>.40</span> <small>USD</small></div>
                     </div>
-                    <a href="https://payhip.com/b/s86Pi" className={`btn btn-cta btn-xl ${styles.cta}`}>✅ QUIERO TRANSFORMAR MI SALUD</a>
+                    <TrackedButton href="https://payhip.com/b/s86Pi" className={`btn btn-cta btn-xl ${styles.cta}`}>✅ QUIERO TRANSFORMAR MI SALUD</TrackedButton>
                     <div className={styles.row}>
                         <span>🔒 Pago seguro</span>
                         <span>⚡ Acceso inmediato</span>

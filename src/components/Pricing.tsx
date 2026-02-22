@@ -1,3 +1,4 @@
+import TrackedButton from "./TrackedButton";
 import styles from "./Pricing.module.css";
 
 const includes = [
@@ -28,7 +29,7 @@ export default function Pricing() {
                             <div className={styles.label}>TU PRECIO HOY</div>
                             <div className={styles.price}>$15 <span>USD</span></div>
                             <div className={styles.sub}>Pago único · Acceso de por vida</div>
-                            <a href="https://payhip.com/b/s86Pi" className="btn btn-cta btn-full">🛒 ¡COMPRAR AHORA POR $15!</a>
+                            <TrackedButton href="https://payhip.com/b/s86Pi" className="btn btn-cta btn-full">🛒 ¡COMPRAR AHORA POR $15!</TrackedButton>
                             <div className={styles.secure}>
                                 <span>🔒 Pago 100% seguro</span>
                                 <span>⚡ Acceso inmediato</span>
